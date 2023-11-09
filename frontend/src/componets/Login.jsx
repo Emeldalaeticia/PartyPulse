@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {BiUser} from "react-icons/bi"
 import {AiOutlineUnlock} from "react-icons/ai"
+import Navbar from "./Navbar";
 
 
 function Login() {
@@ -14,6 +15,7 @@ function Login() {
     };
     return (
         <>
+        <Navbar/>
         <div className="bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative w-2/4 left-60 top-40">
             <h1 className="text-4xl text-white font-bold text-center mb-6">Login</h1>
             <form action="">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 
 
@@ -29,6 +30,7 @@ function Register() {
 
     return (
         <>
+            <Navbar/>
             <div className="bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative w-2/4 left-60 top-40">
                 <h1 className="text-4xl text-white font-bold text-center mb-6">Register</h1>
                 <form onSubmit={handleSubmit}>
