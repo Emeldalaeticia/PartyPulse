@@ -2,6 +2,8 @@
 /* eslint-disable react/jsx-no-undef */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import {BiUser} from "react-icons/bi"
+import {AiOutlineUnlock} from "react-icons/ai"
 
 
 function Login() {
@@ -18,6 +20,7 @@ function Login() {
                 <div className="mb-4">
                     <label htmlFor="email" className="text-white mb-1 block">Email Address</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email address" className="block w-full py-2.3 px-0 text-sm text-white bg-transparent border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600" />
+                    <BiUser className="absoloute top-10 right-5 "/>
                 </div>
 
                 <div className="mb-4">
@@ -28,13 +31,14 @@ function Login() {
                             id="password"
                             name="password"
                             placeholder="Enter your password" className="block w-full py-2.3 px-0 text-sm text-white bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600" />
-                        <button type="button" onClick={handleShowPassword} className="ml-4 bg-white text-slate-800 px-2 py-1 rounded-md focus:outline-none focus:ring-0 focus:text-white focus:bg-slate-800">
+                        <button type="button" onClick={handleShowPassword} className="ml-4 bg-white text-slate-950 px-2 py-1 rounded-md focus:outline-none focus:ring-0 focus:text-white focus:bg-slate-800">
                             {showPassword ? "Hide" : "Show"}
                         </button>
+                        <AiOutlineUnlock className="absoloute top-10 right-5 "/>
                     </div>
                 </div>
 
-                <button type="submit" className="w-full py-2.3 px-0 text-sm text-white bg-blue-600 rounded-md focus:outline-none focus:ring-0 focus:bg-blue-700">Login</button>
+                <button type="submit" className="w-full py-2 px-0 text-sm text-white bg-blue-600 rounded-md focus:outline-none focus:ring-0 focus:bg-blue-700">Login</button>
                 <div>
                 <span> New Here? <Link to='Register'>Create an Account</Link></span>
             </div>
