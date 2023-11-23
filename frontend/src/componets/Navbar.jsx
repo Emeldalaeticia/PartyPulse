@@ -9,40 +9,18 @@ function Navbar() {
   const handleClick = () => setClick(!click);
 
   const content = (
-    <div
-      className={`lg:hidden block absolute top-16 w-full left-0 right-0 bg-Fuchsia-400 transition`}
-    >
+    <div className={`lg:hidden block absolute top-16 w-full left-0 right-0 bg-Fuchsia-400 transition`}>
       <ul className="text-center text-xl p-20">
-        <Link
-          spy={true}
-          smooth={true}
-          to="Home"
-          className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded"
-        >
+        <Link to="/" className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <li>Home</li>
         </Link>
-        <Link
-          spy={true}
-          smooth={true}
-          to="EventList"
-          className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded"
-        >
+        <Link to="/eventlist" className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <li>Events</li>
         </Link>
-        <Link
-          spy={true}
-          smooth={true}
-          to="Register"
-          className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded"
-        >
+        <Link to="/register" className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <li>Register</li>
         </Link>
-        <Link
-          spy={true}
-          smooth={true}
-          to="Login"
-          className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded"
-        >
+        <Link to="/login" className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <li>Login</li>
         </Link>
       </ul>
@@ -51,9 +29,7 @@ function Navbar() {
 
   return (
     <nav>
-      <div
-        className={`h-10vh flex justify-between z-50 text-slate-950 lg:py-4 ${click ? `py-4` : ''}`}
-      >
+      <div className={`h-10vh flex justify-between z-50 text-slate-950 lg:py-4 ${click ? `py-4` : ''}`}>
         <div className="flex items-center flex-1">
           <span>
             <img
@@ -66,36 +42,16 @@ function Navbar() {
         <div className="lg:flex md:flex lg: flex-1 items center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px]">
-              <Link
-                spy={true}
-                smooth={true}
-                to="Home"
-                className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}
-              >
+              <Link to="/" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
                 <li>Home</li>
               </Link>
-              <Link
-                spy={true}
-                smooth={true}
-                to="EventList"
-                className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}
-              >
+              <Link to="/eventlist" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
                 <li>Events</li>
               </Link>
-              <Link
-                spy={true}
-                smooth={true}
-                to="Register"
-                className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}
-              >
+              <Link to="/register" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
                 <li>Register</li>
               </Link>
-              <Link
-                spy={true}
-                smooth={true}
-                to="Login"
-                className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}
-              >
+              <Link to="/login" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
                 <li>Login</li>
               </Link>
             </ul>
@@ -104,10 +60,7 @@ function Navbar() {
             {click && content}
           </div>
         </div>
-        <button
-          className={`block sm:hidden transition ${click ? `hidden` : ''}`}
-          onClick={handleClick}
-        >
+        <button className={`block sm:hidden transition ${click ? `hidden` : ''}`} onClick={handleClick}>
           {click ? <FaTimes /> : <CiMenuFries />}
         </button>
       </div>

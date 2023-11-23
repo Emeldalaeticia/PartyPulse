@@ -12,13 +12,13 @@ function App() {
   return (
     <>
       
-        <div className='text-white h-[100vh] flax justify-center items-center bg-cover'>
+        <div className='text-white h-[100vh] justify-center items-center bg-cover'>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
-          <Route path="home" element={<HomePage/>}/>
-          <Route path="eventlist" element={<EventList/>}/>
-          <Route path="login" element={<Login/>}/>
-          <Route path="register" element={<Register/>}/>
+          <Route path="/home" element={<HomePage/>}/>
+          <Route path="/eventlist" element={<EventList/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
 
         </Routes>
       

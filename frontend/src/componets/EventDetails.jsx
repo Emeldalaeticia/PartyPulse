@@ -1,11 +1,13 @@
-
+// EventDetail.js
 import React from 'react';
-import EventCard from './EventCard';
-import Navbar from './Navbar';
+import { useParams } from 'react-router-dom';
 
-const EventList = () => {
-    const dummyEventData = [
-      {
+const EventDetail = () => {
+  const { id } = useParams(); // Get the 'id' parameter from the URL
+
+  // Dummy event data (replace this with actual data fetching logic)
+  const dummyEventData = [
+    {
         id: 1,
         title: 'Sample Event 1',
         description: 'This is a sample event description.',
@@ -77,30 +79,29 @@ const EventList = () => {
         time: '14:00',
         location: 'Sample Location 2'
       },
-      // Add more dummy events as needed
-    ];
-  
-    return (
-      <>
-        <Navbar/>
-        <div className="event-list-page md:items-center">
-          <h1 className="text-3xl font-bold p-3 ">Upcoming Events</h1>
-          <div className="flex flex-wrap -mx-4">
-            {dummyEventData.map(event => (
-              <div key={event.id} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-                <EventCard
-                  title={event.title}
-                  description={event.description}
-                  date={event.date}
-                  time={event.time}
-                  location={event.location}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-        </>
-    );
+    // Add more dummy events as needed
+  ];
+
+  // Find the selected event based on the 'id' parameter
+  const selectedEvent = dummyEventData.find(event => event.id === parseInt(id));
+
+  // Check if the event exists (for safety)
+  if (!selectedEvent) {
+    return <div>Event not found</div>;
+  }
+
+  const { title, description, date, time, location } = selectedEvent;
+
+  return (
+    <div className="event-detail">
+      <h1>Event Details</h1>
+      <h2>{title}</h2>
+      <p>Description: {description}</p>
+      <p>Date: {date}</p>
+      <p>Time: {time}</p>
+      <p>Location: {location}</p>
+    </div>
+  );
 };
 
-export default EventList;
+export default EventDetail;
