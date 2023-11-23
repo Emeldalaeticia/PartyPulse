@@ -5,6 +5,7 @@ import Login from './componets/Login'
 import Register from './componets/Register'
 import HomePage from './componets/HomePage'
 import EventList from './componets/EventList'
+import EventDetails from './componets/EventDetails'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
           <Route path="/eventlist" element={<EventList/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
+          <Route path="/events/:eventId" element={<EventDetails />}/>
 
         </Routes>
       

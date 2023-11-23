@@ -2,6 +2,7 @@
 import React from 'react';
 import EventCard from './EventCard';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 const EventList = () => {
     const dummyEventData = [
@@ -89,6 +90,7 @@ const EventList = () => {
             {dummyEventData.map(event => (
               <div key={event.id} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
                 <EventCard
+                  eventId={event.id} 
                   title={event.title}
                   description={event.description}
                   date={event.date}
