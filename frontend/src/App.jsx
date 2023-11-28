@@ -6,6 +6,8 @@ import Register from './componets/Register'
 import HomePage from './componets/HomePage'
 import EventList from './componets/EventList'
 import EventDetails from './componets/EventDetails'
+import DashboardLayout from './componets/dashboard/DashboardLayout'
+
 
 function App() {
   
@@ -16,11 +18,14 @@ function App() {
         <div className='text-white h-[100vh] justify-center items-center bg-cover'>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
-          <Route path="/home" element={<HomePage/>}/>
+          
           <Route path="/eventlist" element={<EventList/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/events/:eventId" element={<EventDetails />}/>
+
+          {/* Dashboard Route */}
+          <Route path="/dashboard/*" element={<DashboardLayout />} />
 
         </Routes>
       

@@ -23,6 +23,9 @@ function Navbar() {
         <Link to="/login" className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <li>Login</li>
         </Link>
+        <Link to="/dashboard" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
+          <li>Organizers Dashboard</li>
+        </Link>
       </ul>
     </div>
   );
@@ -53,6 +56,9 @@ function Navbar() {
               </Link>
               <Link to="/login" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
                 <li>Login</li>
+              </Link>
+              <Link to="/dashboard" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
+                <li>Organizers Dashboard</li>
               </Link>
             </ul>
           </div>

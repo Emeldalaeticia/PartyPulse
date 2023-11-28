@@ -8,7 +8,6 @@ const EventDetail = () => {
   const dummyEventData = [
     // Your event data here...
   ];
-
   // Find the selected event based on the 'eventId' parameter
   const selectedEvent = dummyEventData.find(event => event.id === parseInt(eventId));
 
@@ -20,14 +19,17 @@ const EventDetail = () => {
   const { title, description, date, time, location } = selectedEvent;
 
   return (
-    <div className="event-detail">
-      <h1>Event Details</h1>
-      <h2>{title}</h2>
-      <p>Description: {description}</p>
-      <p>Date: {date}</p>
-      <p>Time: {time}</p>
-      <p>Location: {location}</p>
-    </div>
+    <>
+        <div className="event-detail">
+        
+        <h1>Event Details</h1>
+        <h2>{title}</h2>
+        <p>Description: {description}</p>
+        <p>Date: {date}</p>
+        <p>Time: {time}</p>
+        <p>Location: {location}</p>
+      </div>
+    </>
   );
 };
 
