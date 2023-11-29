@@ -1,21 +1,17 @@
-/* eslint-disable react/jsx-key */
-import React from 'react'
-import { datas } from './Data'
+import React from 'react';
+import { datas } from './Data';
+
 const SidebarData = ({ toggle }) => {
   return (
-    <>
-        <div className=''>
-            {datas.map(data=> {
-                return(
-                    <div className=''>
-                        <div className=''>{data.icon}</div>
-                        <div className=''>{data.text}</div>
-                    </div>
-                )
-        })}
+    <div>
+      {datas.map(data => (
+        <div key={data.id} className='flex items-center justify-center mt-2 p-2 rounded-lg cursor-pointer hover:bg-[#ec489940] transition-all duration-300'>
+          <div>{data.icon}</div>
+          {!toggle && <div>{data.text}</div>}
         </div>
-    </>
-  )
-}
+      ))}
+    </div>
+  );
+};
 
-export default SidebarData
+export default SidebarData;

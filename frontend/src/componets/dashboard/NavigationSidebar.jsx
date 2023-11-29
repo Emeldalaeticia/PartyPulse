@@ -8,7 +8,7 @@ const NavigationSidebar = () => {
   // Navigation links for different dashboard sections
   const[ toggle, setToggle] = useState(false);
   return (
-    <div className={` ${toggle ? 'w-[5.8rem]' : " "} bg-slate-950 bg-opacity-25 h-[96%] w-[20rem] rounded-3xl ml-6 p-4 border transition-all duration-500 border-solid border-bg-slate-950-opacity-25 relative `}>
+    <div className={` ${toggle ? 'w-32' : " "} bg-slate-950 bg-opacity-25 h-fit w-[20rem] rounded-3xl ml-6 p-4 border transition-all duration-500 border-solid border-bg-slate-950-opacity-25 relative `}>
       <UserProfile toggle={toggle}/>
       <SidebarData toggle={toggle}/>
       <div className='absolute top-[7rem] flex justify-center items-center -left-5 w-10 h-10 bg-slate-950 bg-opacity-25 rounded-full cursor-pointer' onClick={() => {
