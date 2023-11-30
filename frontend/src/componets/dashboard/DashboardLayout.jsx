@@ -5,15 +5,19 @@ import DashboardMain from './DashboardMain'; // Main dashboard component
 
 const DashboardLayout = () => {
   return (
-    <div className="flex h-screen">
-      <NavigationSidebar />
-      <div className="flex-grow p-8">
-        <Routes>
-          <Route index element={<DashboardMain />} />
-          {/* Add routes for different dashboard sections */}
-        </Routes>
-      </div>
-    </div>
+    <>
+        <div className="flex h-screen">
+          <NavigationSidebar />
+          <div className="flex-grow p-8">
+            <Routes> 
+              <Route index element={<DashboardMain />} />
+              {/* Add routes for different dashboard sections */}
+            </Routes>
+            
+          </div>
+        </div>
+    
+    </>
   );
 };
 
