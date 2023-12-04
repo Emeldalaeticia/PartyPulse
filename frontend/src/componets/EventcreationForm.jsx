@@ -1,5 +1,5 @@
 import React from 'react';
-import UnsplashImage from './dashboard/UnsplashImage';
+import UnsplashImage from './UnsplashImage';
 
 const EventCreationForm = () => {
   return (
@@ -14,10 +14,10 @@ const EventCreationForm = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2 p-8">
-            <h2 className="text-4xl mb-8 font-semibold">Register</h2>
+            <h2 className="text-4xl mb-8 font-semibold italic text-slate-950 hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400">CREATE YOUR NEXT EVENT</h2>
             <form action="#" className="flex flex-col gap-4">
               <div className="flex flex-col lg:flex-row gap-4">
-                <input type="text" placeholder="Title" className="border border-gray-400 py-2 px-4 rounded-md w-full" />
+                <input type="text" placeholder="Title" className="border border-gray-400 py-2 px-4 rounded-md w-full bg-red-50" />
                 <input type="text" placeholder="Description" className="border border-gray-400 py-2 px-4 rounded-md w-full" />
               </div>
               <div className="flex flex-col lg:flex-row gap-4">

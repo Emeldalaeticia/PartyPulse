@@ -9,7 +9,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
 
   const content = (
-    <div className={`lg:hidden block absolute top-16 w-full left-0 right-0 bg-Fuchsia-400 transition`}>
+    <div className={`lg:hidden block absolute top-16 w-full left-0 right-0 bg-Fuchsia-400 transition mb-0`}>
       <ul className="text-center text-xl p-20">
         <Link to="/" className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <li>Home</li>
@@ -31,20 +31,24 @@ function Navbar() {
   );
 
   return (
-    <nav>
-      <div className={`h-10vh flex justify-between z-50 text-slate-950 lg:py-4 ${click ? `py-4` : ''}`}>
-        <div className="flex items-center flex-1">
-          <span>
-            <img
-              src="/src/assets/Logo.png"
-              alt="Image"
-              className="img-fluid w-28 h-auto rounded-full"
-            />
+    <> 
+    
+    
+      <div className={`h-10vh flex justify-between z-50  text-slate-950 lg:py-4 ${click ? `py-4` : ''}`}>
+        <div className="">
+          <span className="">
+            <Link to="/">
+              <img
+                src="/src/assets/Logo.png"
+                alt="Image"
+                className="img-fluid w-28 h-auto rounded-full "
+              />
+            </Link>
           </span>
         </div>
         <div className="lg:flex md:flex lg: flex-1 items center justify-end font-normal hidden">
-          <div className="flex-10">
-            <ul className="flex gap-8 mr-16 text-[18px]">
+          <div className="flex-10 ">
+            <ul className="flex gap-8 mr-16  text-[18px] ">
               <Link to="/" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
                 <li>Home</li>
               </Link>
@@ -70,7 +74,8 @@ function Navbar() {
           {click ? <FaTimes /> : <CiMenuFries />}
         </button>
       </div>
-    </nav>
+    
+    </>
   );
 }
 

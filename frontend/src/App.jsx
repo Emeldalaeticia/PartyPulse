@@ -8,6 +8,7 @@ import EventList from './componets/EventList'
 import EventDetails from './componets/EventDetails'
 import DashboardLayout from './componets/dashboard/DashboardLayout'
 import EventCreationForm from './componets/EventcreationForm'
+import BookEvent from './componets/BookEvent'
 function App() {
   
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/events/:eventId" element={<EventDetails />}/>
           
           <Route path="/createevent" element={<EventCreationForm />}></Route>
+          <Route path="/bookingpage" element={<BookEvent/>}></Route>
 
 
           {/* Dashboard Route */}

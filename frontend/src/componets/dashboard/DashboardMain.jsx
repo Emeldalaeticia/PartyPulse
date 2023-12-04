@@ -19,7 +19,7 @@ const DashboardMain = () => {
   return (
     <>
       <div>
-        <button className="bg-purple-500 py-3 text-white rounded-md w-full mt-6"> Create Event</button>
+        <button className="bg-purple-500 py-3 text-white rounded-md w-full mt-6"> <Link to="/createevent"> Create Event </Link></button>
       </div>
       <div className='grid grid-cols-2 gap-12'>
         <div>
