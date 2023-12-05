@@ -11,7 +11,7 @@ function Navbar() {
   const content = (
     <div className={`lg:hidden block absolute top-16 w-full left-0 right-0 bg-Fuchsia-400 transition mb-0`}>
       <ul className="text-center text-xl p-20">
-        <Link to="/" className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+        <Link to="/" className="my-4 text-slate-950 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <li>Home</li>
         </Link>
         <Link to="/eventlist" className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
@@ -34,7 +34,7 @@ function Navbar() {
     <> 
     
     
-      <div className={`h-10vh flex justify-between z-50  text-slate-950 lg:py-4 ${click ? `py-4` : ''}`}>
+      <div className={`h-10vh flex justify-between z-50  text-slate-950 lg:py-0 ${click ? `py-0` : ''}`}>
         <div className="">
           <span className="">
             <Link to="/">

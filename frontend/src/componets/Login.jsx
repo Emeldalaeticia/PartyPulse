@@ -16,7 +16,7 @@ function Login() {
     return (
         <>
         <Navbar/>
-        <div className="bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative w-2/4 left-60 top-40">
+        <div className="bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative w-2/4 left-72">
             <h1 className="text-4xl text-white font-bold text-center mb-6">Login</h1>
             <form action="">
                 <div className="mb-4">
@@ -42,7 +42,7 @@ function Login() {
 
                 <button type="submit" className="w-full py-2 px-0 text-sm text-white bg-blue-600 rounded-md focus:outline-none focus:ring-0 focus:bg-blue-700">Login</button>
                 <div>
-                <span> New Here? <Link to='Register'>Create an Account</Link></span>
+                <span> New Here? <Link to='/register'>Create an Account</Link></span>
             </div>
         
             </form>
