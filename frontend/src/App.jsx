@@ -31,7 +31,7 @@ function App() {
 
 
           {/* Dashboard Route */}
-          <Route path="/dashboard/*" element={<DashboardLayout />} />
+          <Route path="/organizersdashboard/*" element={<DashboardLayout />} />
 
         </Routes>
       

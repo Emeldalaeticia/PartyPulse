@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
+import Logo from "../assets/Logo.png"
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -23,7 +24,7 @@ function Navbar() {
         <Link to="/login" className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
           <li>Login</li>
         </Link>
-        <Link to="/dashboard" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
+        <Link to="/organizersdashboard" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
           <li>Organizers Dashboard</li>
         </Link>
       </ul>
@@ -39,7 +40,7 @@ function Navbar() {
           <span className="">
             <Link to="/">
               <img
-                src="/src/assets/Logo.png"
+                src={Logo}
                 alt="Image"
                 className="img-fluid w-28 h-auto rounded-full "
               />
@@ -61,7 +62,7 @@ function Navbar() {
               <Link to="/login" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
                 <li>Login</li>
               </Link>
-              <Link to="/dashboard" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
+              <Link to="/organizersdashboard" className={`hover:text-amber-500 transition border-b-2 border-slate-900 hover:border-amber-500 cursor-pointer ${click ? `hidden` : ''}`}>
                 <li>Organizers Dashboard</li>
               </Link>
             </ul>
