@@ -42,7 +42,11 @@ INSTALLED_APPS = [
     'pulse',
     'rest_framework',
     
+    
 ]
+
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
