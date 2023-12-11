@@ -68,6 +68,9 @@ CORS_ALLOWED_ORIGINS = [
     # Add more allowed origins if needed
 ]
 
+SECURE_SSL_REDIRECT = True
+
+
 ROOT_URLCONF = 'party.urls'
 
 TEMPLATES = [
