@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import axios from "axios"
 
 const EventDetail = () => {
   const { eventId } = useParams(); // Get the 'eventId' parameter from the URL
