@@ -1,6 +1,7 @@
 import React from 'react';
 import UnsplashImage from './UnsplashImage';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 const BookEvent = () => {
   // Mock data representing event details (replace it with your actual event data)
@@ -37,10 +38,10 @@ const BookEvent = () => {
               <strong>{eventDetails.contactEmail}</strong>
             </p>
             <button
-              onClick={handleBooking}
               className="bg-purple-500 hover:bg-gradient-to-r from-orange-400 to-pink-300 py-3 text-white rounded-md w-full transition duration-300 ease-in-out"
-            >
+            ><Link to="/paypal">
               Book Event
+              </Link>
             </button>
           </div>
           <div className="lg:w-3/4 lg:pl-24"> {/* Adjusted padding */}

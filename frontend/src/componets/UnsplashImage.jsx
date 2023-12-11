@@ -20,7 +20,7 @@ const UnsplashImage = () => {
 
   return (
     <div>
-      {imageUrl && <img src={imageUrl} alt="Unsplash Image" />}
+      {imageUrl && <img src={imageUrl} alt="Unsplash Image" className='rounded-xl'/>}
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import partypulse from "../assets/partypulse.png"
 
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
 
                 <div className="col-md-6"></div>
                 <div className="container">
-                    <img src="/src/assets/partypulse.png" alt="Image" className="img-fluid" />
+                    <img src={partypulse} alt="Image" className="img-fluid" />
                 </div>
             
         </>
