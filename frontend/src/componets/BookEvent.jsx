@@ -39,7 +39,10 @@ const BookEvent = () => {
             </p>
             <button
               className="bg-purple-500 hover:bg-gradient-to-r from-orange-400 to-pink-300 py-3 text-white rounded-md w-full transition duration-300 ease-in-out"
-            ><Link to="/paypal">
+             
+              onSubmit={handleBooking}
+             >
+              <Link to="/ticketing">
               Book Event
               </Link>
             </button>

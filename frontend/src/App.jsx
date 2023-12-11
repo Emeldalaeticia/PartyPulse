@@ -11,7 +11,6 @@ import EventCreationForm from './componets/EventcreationForm'
 import BookEvent from './componets/BookEvent'
 import UserProfile from './componets/UserProfile'
 import Ticketing from './componets/Ticketing'
-import Paypal from './componets/Paypal'
 function App() {
   
 
@@ -31,8 +30,7 @@ function App() {
           <Route path="/bookingpage" element={<BookEvent/>}></Route>
           <Route path="/userprofile" element={<UserProfile/>}></Route>
           <Route path="/ticketing" element={<Ticketing/>}></Route>
-          <Route path="/paypal" element={<Paypal/>}></Route>
-
+          
 
 
           {/* Dashboard Route */}
