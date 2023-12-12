@@ -11,7 +11,7 @@ from django.contrib.auth import authenticate, login, logout
 class EventList(generics.ListAPIView):
     queryset = Event.objects.all()
     serializer_class = EventSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
     
 class EventCreate(generics.CreateAPIView):
     queryset = Event.objects.all()
