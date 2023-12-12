@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import EventCard from './EventCard';
 import Navbar from './Navbar';
 import axios from 'axios';
+import { useState, useEffect } from 'react';
 
 const EventList = () => {
   const [eventsData, setEventsData] = useState([]);

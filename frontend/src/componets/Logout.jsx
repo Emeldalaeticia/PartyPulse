@@ -7,7 +7,7 @@ function Logout() {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/user/logout/", {
+      const response = await fetch("https://partypulse-q43v.onrender.com/api/user/logout/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -15,14 +15,17 @@ function Logout() {
         // You may need to include any authentication token or session information here
       });
 
-      if (!response.ok) {
+      if (response.ok) {
+        // Call the handleLogout function from the Navbar component
+        Navbar.handleLogout();
+
+        console.log("Logout successful");
+
+        // Redirect to the login page after successful logout
+        navigateTo("/login");
+      } else {
         throw new Error("Logout failed");
       }
-
-      console.log("Logout successful");
-
-      // Redirect to the login page after successful logout
-      navigateTo("/login");
     } catch (error) {
       console.error("Error during logout:", error.message);
       // Handle logout error, show an alert, etc.
