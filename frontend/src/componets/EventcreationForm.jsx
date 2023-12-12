@@ -24,11 +24,11 @@ const EventCreationForm = () => {
               <input type="text" placeholder="Description" className="border border-gray-400 py-2 px-4 rounded-md w-full text-slate-950" />
             </div>
             <div className="flex flex-col lg:flex-row gap-4">
-              <input type="text" placeholder="Date" className="border border-gray-400 py-2 px-4 rounded-md w-full text-slate-950 " />
-              <input type="text" placeholder="Time" className="border border-gray-400 py-2 px-4 rounded-md w-full text-slate-950" />
+              <input type="date" placeholder="Date" className="border border-gray-400 py-2 px-4 rounded-md w-full text-slate-950 " />
+              <input type="time" placeholder="Time" className="border border-gray-400 py-2 px-4 rounded-md w-full text-slate-950" />
             </div>
             <div className="flex flex-col lg:flex-row gap-4">
-              <input type="text" placeholder="Ticket Price" className="border border-gray-400 py-2 px-4 rounded-md w-full text-slate-950" />
+              <input type="number" placeholder="Ticket Price" className="border border-gray-400 py-2 px-4 rounded-md w-full text-slate-950" />
               <input type="text" placeholder="Location" className="border border-gray-400 py-2 px-4 rounded-md w-full text-slate-950" />
             </div>
 

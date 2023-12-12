@@ -11,6 +11,7 @@ import EventCreationForm from './componets/EventcreationForm'
 import BookEvent from './componets/BookEvent'
 import UserProfile from './componets/UserProfile'
 import Ticketing from './componets/Ticketing'
+import Logout from './componets/LogOut'
 function App() {
   
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/bookingpage" element={<BookEvent/>}></Route>
           <Route path="/userprofile" element={<UserProfile/>}></Route>
           <Route path="/ticketing" element={<Ticketing/>}></Route>
+          <Route path="/logout" element={<Logout/>}></Route>
           
 
 

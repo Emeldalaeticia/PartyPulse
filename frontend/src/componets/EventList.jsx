@@ -9,14 +9,17 @@ const EventList = () => {
   useEffect(() => {
     const fetchEventData = async () => {
       try {
-        const response = await axios.get('http://partypulse-q43v.onrender.com/api/events');
+        const response = await axios.get('http://127.0.0.1:8000/api/events/');
         setEventsData(response.data); // Set the fetched event data to the state
       } catch (error) {
         console.error('Error fetching event data:', error);
       }
+
     };
 
     fetchEventData(); // Call the function to fetch event data when the component mounts
+
+    
   }, []);
 
   return (
