@@ -9,7 +9,7 @@ class EventSerializer(serializers.ModelSerializer):
 class UserCreationSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ['username', 'email', 'password', 'is_organizer', 'is_customer']
+        fields = ['username', 'email', 'password', 'is_organizer', 'is_customer', 'full_name']
         extra_kwargs = {'password': {'write_only': True}}
 
     def create(self, validated_data):
