@@ -17,7 +17,7 @@ function EventCard({ eventId, title, description, date, time, location }) {
                 </Link>
                 <button
                     className="bg-purple-500 hover:bg-gradient-to-r from-orange-400 to-pink-300 py-2 text-white rounded-md w-full transition duration-300 ease-in-out mt-10">
-                    <Link to="/bookingpage">
+                    <Link to={`/events/${eventId}`}>
                      Book Event
                     </Link>
                 </button>

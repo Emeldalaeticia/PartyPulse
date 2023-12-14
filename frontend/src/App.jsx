@@ -11,7 +11,7 @@ import EventCreationForm from './componets/EventcreationForm'
 import BookEvent from './componets/BookEvent'
 import UserProfile from './componets/UserProfile'
 import Ticketing from './componets/Ticketing'
-import Logout from './componets/LogOut'
+import Logout from './componets/Logout'
 function App() {
   
 

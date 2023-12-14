@@ -14,7 +14,7 @@ const EventDetail = () => {
   useEffect(() => {
     const fetchEventDetails = async () => {
       try {
-        const response = await axios.get(`https://partypulse-q43v.onrender.com/https:/partypulse-q43v.onrender.com//api/events/${eventId}/`);
+        const response = await axios.get(`https://partypulse-q43v.onrender.com/api/events/${eventId}/`);
         setSelectedEvent(response.data);
         setLoading(false);
       } catch (error) {
