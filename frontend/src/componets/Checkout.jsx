@@ -43,6 +43,7 @@ const Checkout = () => {
                     <select value={currency} onChange={onCurrencyChange} className='text-slate-950'>
                             <option value="USD">💵 USD</option>
                             <option value="EUR">💶 Euro</option>
+                            <option value="KES">💶 KES</option>
                     </select>
                     <PayPalButtons 
                         style={{ layout: "vertical" }}
