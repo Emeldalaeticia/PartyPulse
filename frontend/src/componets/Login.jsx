@@ -32,7 +32,10 @@ function Login() {
       if (response.ok) {
         // Login successful
         // You may want to redirect the user or perform other actions
+        localStorage.setItem("isLoggedIn", true);
+        localStorage.setItem("email", JSON.stringify(email));
         navigateTo('/'); // Replace '/dashboard' with your desired redirect path
+        window.location.reload();
       } else {
         // Handle login failure
         console.error("Login failed");
