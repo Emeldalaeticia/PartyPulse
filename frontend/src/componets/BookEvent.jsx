@@ -12,7 +12,7 @@ const BookEvent = () => {
   useEffect(() => {
     const fetchEventDetails = async () => {
       try {
-        const response = await axios.get(`https://partypulse-q43v.onrender.com/api/events/${eventId}/`);
+        const response = await axios.get(` https://partypulse-q43v.onrender.com/api/events/${eventId}/`);
         console.log('API Response:', response); // Log the response for debugging
         setSelectedEvent(response.data);
         setLoading(false);
