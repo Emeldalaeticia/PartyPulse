@@ -21,6 +21,8 @@ export const Home = () => {
                     </span>
             ))}
             </h1>
+              
+            
           <div className=" box-border h-32 w-50 flex flex-col items-center px-5 text-xl ">
             <p className="text-amber-500 mb-4">
               Discover, create, and share memorable events with PartyPulse. Whether you're a party-goer looking for the hottest events or a host planning the next big thing, we've got you covered.
@@ -31,7 +33,11 @@ export const Home = () => {
           </div>
         </div>
       </div>
-
+      <div className="mb-40 mr-96"> 
+        <button className="animate-button-rotate bg-amber-500 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded-full  ">
+          USHANICONVINCE
+        </button>
+      </div>
       <Footer />
     </div>
   );

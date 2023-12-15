@@ -27,7 +27,7 @@ const EventDetail = () => {
   }, [eventId]);
 
   if (loading) {
-    return <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-400 to-pink-300 rounded-r-lg mt-2 mb-10">Loading...</div>;
+    return <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-400 to-pink-300 rounded-r-lg mt-2 mb-10"> Loading...</div>;
   }
 
   if (!selectedEvent) {

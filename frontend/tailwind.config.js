@@ -13,6 +13,7 @@ module.exports = {
     extend: { 
       animation: {
         "text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
+        'button-rotate': 'button-rotate 3s ease-in-out infinite',
       },
       keyframes: {
         "text-reveal": {
@@ -23,7 +24,14 @@ module.exports = {
             transform: "translate(0, 0)",
           },
         },
+
+        'button-rotate': {
+          '0%': { transform: 'scale(1) rotate(0deg)' },
+          '50%': { transform: 'scale(1.5) rotate(180deg)' },
+          '100%': { transform: 'scale(1) rotate(360deg)' },
+        },
       },
+      
         
       colors: {
         // light mode
