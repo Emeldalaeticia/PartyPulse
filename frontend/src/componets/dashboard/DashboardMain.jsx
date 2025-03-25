@@ -19,21 +19,21 @@ const DashboardMain = () => {
   return (
     <>
       <div>
-        <button className="bg-purple-500 py-3 text-white rounded-md w-full mt-6"> <Link to="/createevent"> Create Event </Link></button>
+        <button className="bg-purple-500 py-3 text-white rounded-md w-full mt-6 mb-6"> <Link to="/createevent"> Create Event </Link></button>
       </div>
       <div className='grid grid-cols-2 gap-12'>
         <div>
-          <h2 className='text-2xl font-bold mb-6'>Barbie</h2>
+          <h2 className='text-2xl font-bold mb-6 '>Barbie</h2>
           <div className='grid grid-cols-2 gap-12'>
             <img src={barbieData.poster_path} alt="Poster" />
             <div>
-              <Card className="max-w-xs mx-auto mb-6" decoration="top" decorationColor="pink">
+              <Card className="max-w-xs mx-auto mb-6 " decoration="top" decorationColor="pink">
                 <Text>Revenue</Text>
-                <Metric>$ {addCommasToNumber(barbieData.global_revenue)} </Metric>
+                <Metric className="text-2xl">$ {addCommasToNumber(barbieData.global_revenue)} </Metric>
               </Card>
               <Card className="max-w-xs mx-auto mb-6" decoration="top" decorationColor="pink">
                 <Text>Budget</Text>
-                <Metric>$ {addCommasToNumber(barbieData.budget)} </Metric>
+                <Metric className="text-2xl">$ {addCommasToNumber(barbieData.budget)} </Metric>
               </Card>
             </div>
           </div>
@@ -45,11 +45,11 @@ const DashboardMain = () => {
             <div>
               <Card className="max-w-xs mx-auto mb-6" decoration="top" decorationColor="indigo">
                 <Text>Revenue</Text>
-                <Metric>$ {addCommasToNumber(oppenheimerData.global_revenue)} </Metric>
+                <Metric className="text-2xl">$ {addCommasToNumber(oppenheimerData.global_revenue)} </Metric>
               </Card>
               <Card className="max-w-xs mx-auto " decoration="top" decorationColor="indigo">
                 <Text>Budget</Text>
-                <Metric>$ {addCommasToNumber(oppenheimerData.budget)} </Metric>
+                <Metric className="text-2xl">$ {addCommasToNumber(oppenheimerData.budget)} </Metric>
               </Card>
             </div>
           </div>
