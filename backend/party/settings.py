@@ -63,8 +63,9 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
-  'http://localhost:5173',
-  'https://partypulse.vercel.app'
+    'https://partypulse.vercel.app',
+    'http://localhost:5173',
+  
 )
 ROOT_URLCONF = 'party.urls'
 

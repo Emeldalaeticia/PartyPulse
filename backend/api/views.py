@@ -6,6 +6,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 
 # create views for handling event creation, updating, deletion, and management functionalities using Django REST Framework's generic views or custom views.
 class EventList(generics.ListAPIView):
@@ -58,6 +59,8 @@ class UserLoginView(APIView):
             return Response({'detail': 'Login successful'}, status=status.HTTP_200_OK)
         else:
             return Response({'detail': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+        
+
 class UserLogoutView(APIView):
     permission_classes = [IsAuthenticated]
 

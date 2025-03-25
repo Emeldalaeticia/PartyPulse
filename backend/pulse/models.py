@@ -8,7 +8,7 @@ class Event(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2, default=0.0)
     date = models.DateField()
     time = models.TimeField()
-    location = models.CharField(max_length=100)
+    location = models.CharField(max_length=100, blank=True, null=True)
    
     
     def __str__(self):
