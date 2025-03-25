@@ -29,11 +29,11 @@ const DashboardMain = () => {
             <div>
               <Card className="max-w-xs mx-auto mb-6 " decoration="top" decorationColor="pink">
                 <Text>Revenue</Text>
-                <Metric className="text-2xl">$ {addCommasToNumber(barbieData.global_revenue)} </Metric>
+                <Metric className="text-lg">$ {addCommasToNumber(barbieData.global_revenue)} </Metric>
               </Card>
               <Card className="max-w-xs mx-auto mb-6" decoration="top" decorationColor="pink">
                 <Text>Budget</Text>
-                <Metric className="text-2xl">$ {addCommasToNumber(barbieData.budget)} </Metric>
+                <Metric className="text-lg">$ {addCommasToNumber(barbieData.budget)} </Metric>
               </Card>
             </div>
           </div>
@@ -45,11 +45,11 @@ const DashboardMain = () => {
             <div>
               <Card className="max-w-xs mx-auto mb-6" decoration="top" decorationColor="indigo">
                 <Text>Revenue</Text>
-                <Metric className="text-2xl">$ {addCommasToNumber(oppenheimerData.global_revenue)} </Metric>
+                <Metric className="text-lg">$ {addCommasToNumber(oppenheimerData.global_revenue)} </Metric>
               </Card>
               <Card className="max-w-xs mx-auto " decoration="top" decorationColor="indigo">
                 <Text>Budget</Text>
-                <Metric className="text-2xl">$ {addCommasToNumber(oppenheimerData.budget)} </Metric>
+                <Metric className="text-lg">$ {addCommasToNumber(oppenheimerData.budget)} </Metric>
               </Card>
             </div>
           </div>
